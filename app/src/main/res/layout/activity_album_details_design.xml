@@ -33,52 +33,6 @@
                 app:layout_collapseMode="parallax"
                 app:layout_collapseParallaxMultiplier="0.5" />
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:clickable="true"
-                app:layout_anchor="@id/details_head_appbar"
-                app:layout_anchorGravity="bottom|left|center_vertical"
-                app:layout_collapseMode="parallax"
-                app:layout_collapseParallaxMultiplier="0.6">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/album_details_head_iv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="45px"
-                    android:layout_marginLeft="30px"
-
-                    app:civ_border_color="#f2f7f6"
-                    app:civ_border_width="2dp" />
-
-                <TextView
-                    android:id="@+id/album_details_time_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="50px"
-                    android:layout_marginLeft="30px"
-                    android:layout_marginTop="16px"
-                    android:layout_toRightOf="@id/album_details_head_iv"
-                    android:text="2011-06-31发布"
-                    android:textColor="#ffffff"
-                    android:textSize="24px" />
-
-                <TextView
-                    android:id="@+id/album_details_author_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_above="@id/album_details_time_tv"
-                    android:layout_marginLeft="30px"
-                    android:layout_toRightOf="@id/album_details_head_iv"
-                    android:text="潘小芬"
-                    android:textColor="#ffffff"
-                    android:textSize="30px" />
-            </RelativeLayout>
-
-
             <android.support.v7.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
@@ -120,7 +74,47 @@
                         android:src="@drawable/yinyuebofang1" />
                 </RelativeLayout>
             </android.support.v7.widget.Toolbar>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="398px"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.9">
 
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/album_details_head_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="45px"
+                    android:layout_marginLeft="30px"
+
+                    app:civ_border_color="#f2f7f6"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/album_details_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="50px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="16px"
+                    android:layout_toRightOf="@id/album_details_head_iv"
+                    android:text="2011-06-31发布"
+                    android:textColor="#ffffff"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/album_details_author_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/album_details_time_tv"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@id/album_details_head_iv"
+                    android:text="潘小芬"
+                    android:textColor="#ffffff"
+                    android:textSize="30px" />
+            </RelativeLayout>
         </android.support.design.widget.CollapsingToolbarLayout>
 
 
@@ -167,4 +161,6 @@
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
     </LinearLayout>
+
+
 </android.support.design.widget.CoordinatorLayout>
