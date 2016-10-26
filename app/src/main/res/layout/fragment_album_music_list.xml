@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fragment_album_music_random_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="30px"
+            android:src="@drawable/suijibofang" />
+
+        <TextView
+            android:id="@+id/fragment_album_music_random_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="24px"
+            android:layout_toRightOf="@id/fragment_album_music_random_iv"
+            android:text="随机播放全部"
+            android:textColor="#333333"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/fragment_album_music_choose_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text="多选"
+            android:textColor="#333333"
+            android:textSize="30px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@id/fragment_album_music_choose_tv"
+            android:src="@drawable/duoxuan" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_album_music_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

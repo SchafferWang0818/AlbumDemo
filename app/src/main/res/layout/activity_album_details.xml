@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_album_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F7F6"
+    android:orientation="vertical"
+    tools:context="schaffer.albumdemo.activity.AlbumDetailsActivity">
+
+    <include layout="@layout/content_album_details_head" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="74px"
+        android:layout_marginBottom="10px"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/album_details_rb1"
+            style="@style/style_album_details_rb"
+            android:checked="true"
+            android:text="歌曲列表" />
+
+        <RadioButton
+            android:layout_width="2px"
+            android:layout_height="37px"
+            android:background="#333333"
+            android:button="@null"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/album_details_rb2"
+            style="@style/style_album_details_rb"
+            android:text="专辑介绍" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/album_details_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/album_hot_head_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="36px"
+        android:layout_centerVertical="true"
+        android:src="@drawable/rementuijianicon" />
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/album_hot_head_iv"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/album_hot_head_iv"
+        android:gravity="center_vertical"
+        android:text="热门推荐"
+        android:textColor="#333333"
+        android:textSize="30px" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#999999"
+    android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>

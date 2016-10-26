@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/item2_details_recycler_title_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="30px"
+        android:src="@drawable/zhuanjijieshaoicon" />
+
+    <TextView
+        android:id="@+id/item2_details_recycler_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item2_details_recycler_title_iv"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/item2_details_recycler_title_iv"
+        android:text="专辑介绍："
+        android:textColor="#333333"
+        android:textSize="30px" />
+
+    <schaffer.albumdemo.view.DTextView
+        android:id="@+id/item2_details_recycler_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item2_details_recycler_title_iv"
+        android:layout_marginLeft="30px"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="40px"
+        android:maxLength="500"
+        android:layout_marginRight="30px"
+        android:text="偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪偷洒一滴泪"
+        android:textColor="#666666"
+        android:textSize="28px" />
+</RelativeLayout>

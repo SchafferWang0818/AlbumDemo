@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/item1_details_recycler_title_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="30px"
+        android:src="@drawable/zhuanjimingcheng_icon" />
+
+    <TextView
+        android:id="@+id/item1_details_recycler_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item1_details_recycler_title_iv"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/item1_details_recycler_title_iv"
+        android:text="专辑名称："
+        android:textColor="#333333"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/item1_details_recycler_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item1_details_recycler_title_tv"
+        android:layout_alignTop="@id/item1_details_recycler_title_tv"
+        android:layout_toRightOf="@id/item1_details_recycler_title_tv"
+        android:gravity="center_vertical"
+        android:text="偷洒一滴泪"
+        android:textColor="#333333"
+        android:textSize="28px" />
+</RelativeLayout>
